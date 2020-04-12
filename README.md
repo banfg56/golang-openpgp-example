@@ -24,7 +24,7 @@ Something you should know about PGP before started.
 ### PGP encrypt/decrypt Message
 ```
  1.encrpyt & sign & compress message
- gpg    --encrypt --sign --armor  --cipher-algo AES256 --digest-algo SHA256  --compress-algo 1 -r DBSSG -u uid     {need_to_be_encypt}
+ gpg    --encrypt --sign --armor  --cipher-algo AES256 --digest-algo SHA256  --compress-algo 1 -r {Recipient} -u {uid}     {need_to_be_encypt}
 
  2.decrypt
  gpg --output {out_file} --decrypt  {need_be_decrypt}
